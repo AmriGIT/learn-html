@@ -3,21 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>learn HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
 </head>
 <body>
+ <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">NmyBlog</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li>
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(curent)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#blog">blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+  <div class="wrapper">
    <ul>
-    <li>HOME</li>   
-    <li>ABOUT</li>   
-    <li>PRODUCT</li>   
-    <li>BLOG</li>   
+    <li>HOME</li> |  
+    <li>ABOUT</li>  |  
+    <li>PRODUCT</li>  |  
+    <li>BLOG</li>   |
     <li>CONTACT</li>   
    </ul>
     <h1>
-        Welcome To My Blog
+        Selamat Datang
     </h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero facilis laborum nesciunt aliquid, nemo nihil voluptates quas aspernatur id vitae officiis, consequatur. Molestiae inventore impedit odit, tenetur debitis modi nulla.</p>
     <br>
-    <h1>ABOUT</h1>
+    <h1 id="about">ABOUT</h1>
     <img src="https:graph.facebook.com/100000576108477/picture?height=200" alt="">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor error ipsam doloremque eligendi obcaecati. Quam excepturi, nam voluptas eius eligendi. Provident hic ipsa molestiae, repudiandae eos totam numquam, voluptatum maxime!</p>
     <h3>Cara menemukan id facebook</h3>
@@ -60,14 +102,19 @@
     <br>
     <h1>CONTACT</h1>
     <form>
-      <p>
-       Nama:
-        <input type="text">
-        </p>
-        <p>
-       Email:
-        <input type="text">
-        </p>
+     <div class="form-group">
+         <label for="">Nama :</label>
+         <Input type="text" class="form-control"></Input>
+     </div>
+          <div class="form-group">
+         <label for="">Email :</label>
+         <Input type="text" class="form-control"></Input>
+     </div>
+             <div class="form-group">
+         <label for="">email :</label>
+         <Input type="text" class="form-control"></Input>
+         s
+     </div>
         <p>
        Subject:
         <input type="text">
@@ -80,8 +127,13 @@
         <button>Send</button>    
         </p>
     </form>
+    
+  </div>
     <br>
     <br>
     <br>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>
